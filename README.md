@@ -1,4 +1,3 @@
-
 # Horrified
 
 Horrified is a first-person 3D horror game inspired by classic maze-chasing gameplay. Set on Halloween night, the player enters an abandoned house on a dare to collect 20 candies, only to discover that the family who disappeared there still haunts the property.
@@ -24,12 +23,12 @@ The objective is to collect all 20 candies while avoiding the ghost, which patro
 
 ## Controls
 
-| Action | Control |
-| --- | --- |
-| Move | W, A, S, D |
-| Look | Mouse |
+| Action | Control                       |
+| ------ | ----------------------------- |
+| Move   | W, A, S, D                    |
+| Look   | Mouse                         |
 | Sprint | Left Shift or hold Left Mouse |
-| Quit | Esc |
+| Quit   | Esc                           |
 
 ## How to Play
 
@@ -47,15 +46,27 @@ The objective is to collect all 20 candies while avoiding the ghost, which patro
 
 ## Project Structure
 
-| Script | Purpose |
+| Script           | Purpose                                                                                    |
+| ---------------- | ------------------------------------------------------------------------------------------ |
+| PlayerController | Handles movement, camera look, sprinting, and stamina management                           |
+| GameManager      | Oversees game flow, candy collection, lives, jumpscares, messages, and win/lose conditions |
+| GhostAI          | Controls ghost patrol behavior and chase logic using NavMesh navigation                    |
+| CandySpawner     | Randomly places collectible candies across the map                                         |
+| CandyPickup      | Detects and collects candy when the player makes contact                                   |
+| SlowZone         | Applies temporary slowdown effects when the player enters spider-web areas                 |
+| MenuController   | Manages the restart and quit menu actions                                                  |
+
+
+
+## Team
+
+| Name | Contribution |
 | --- | --- |
-| PlayerController | Handles movement, camera look, sprinting, and stamina management |
-| GameManager | Oversees game flow, candy collection, lives, jumpscares, messages, and win/lose conditions |
-| GhostAI | Controls ghost patrol behavior and chase logic using NavMesh navigation |
-| CandySpawner | Randomly places collectible candies across the map |
-| CandyPickup | Detects and collects candy when the player makes contact |
-| SlowZone | Applies temporary slowdown effects when the player enters spider-web areas |
-| MenuController | Manages the restart and quit menu actions |
+| Nget Sokunkanha | Managed gameplay flow, menu interactions, and overall game systems. |
+| Chea Kuyhong | Contributed to third-party asset integration, player controller, and ghost AI behavior. |
+| Ean Mana | Developed the candy spawning system and placement logic across the environment. |
+| Ly Sokunnita | Implemented candy collection and pickup mechanics for player progression. |
+| Chhoung Sophakvatey | Designed and implemented the slow-zone mechanic that simulates spider webs and movement penalties. |
 
 ## Credits
 
@@ -69,4 +80,3 @@ This project makes use of assets and content from the following sources:
 ## License
 
 This project is intended for educational and personal use. Please respect the licensing terms of the included third-party assets and content.
-
